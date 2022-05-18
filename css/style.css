@@ -1,7 +1,7 @@
 body,html{margin: 0;padding: 0;}
   /* STYLES SPECIFIC TO FOOTER  */
   .footer {
-    width: 110%;
+    width: 100%;
 
     /* position:fixed; */
     bottom: 0px;    
