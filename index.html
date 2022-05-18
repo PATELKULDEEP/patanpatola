@@ -15,9 +15,10 @@
         }
         
         .top-container {
-          background-color: #f1f1f1;
-          padding: 30px;
+          background-color: black;
+          padding: 15px;
           text-align: center;
+          box-sizing: border-box;
         }
         
         .header {
@@ -42,6 +43,7 @@
         
         
         .topnav {
+        
           overflow: hidden;
           background-color: #333;
         }
@@ -153,12 +155,15 @@
 
 
 <div class="top-container">
-    <h1>PATAN</h1>
-    <h1>PATOLA</h1>
-    <p>A weave unlike any other...</p>
+    <div style="width: 100%; ">    <img style="width: 10%; float: left;" src="images/header.png"> </div>
+        <div style="text-align: left; font-family: serif; color: #fff;">
+            <h1 >PATAN<br>
+            PATOLA</h1>
+            <p style="margin-top:-1%">A weave unlike any other...</p>
+        </div>
   </div>
   
-  <div class="topnav" id="myTopnav">
+  <div class="topnav" id="myTopnav" style="width: auto; ">
       <a href="#home" class="active">Home</a>
       <a href="#news">Our Story</a>
       <a href="#contact">Patola House</a>
