@@ -128,5 +128,16 @@ body,html{margin: 0;padding: 0;}
     height: 70vh;
     align-items: center;
     text-align: center;
+    font-weight: bold;
+
     padding: 10% 0% 0% 0%;
+  }
+
+  .stay-in-touch-outer h1{
+    font-size: 58pt;
+    font-family: 'Alfa Slab One', cursive;
+  }
+
+  .stay-in-touch-outer p{
+    font-size: 18pt;
   }
