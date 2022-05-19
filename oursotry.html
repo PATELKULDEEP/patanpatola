@@ -186,7 +186,7 @@
         </div>
   </div>
   
-  <div class="topnav" id="myTopnav" style="width: auto; ">
+  <div class="topnav" id="myTopnav" style="width: 100%; ">
     <a href="index.html" >Home</a>
     <a href="oursotry.html" class="active">Our Story</a>
     <a href="patolahouse.html">Patola House</a>
@@ -212,17 +212,17 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active" style="height: 480px; object-fit:cover;">
-      <img class="d-block w-100" src="images/ourstory1.jpg" alt="First slide">
+      <img class="d-block w-100" src="images/ourstory1.jpg" style="height: 100%;" alt="First slide">
       <div class="carousel-caption d-none d-md-block">
       </div>
     </div>
     <div class="carousel-item" style="height: 480px; object-fit:cover;">
-      <img class="d-block w-100" src="images/ourstory2.jpeg" alt="Second slide">
+      <img class="d-block w-100" src="images/ourstory2.jpeg" style="height: 100%;" alt="Second slide">
       <div class="carousel-caption d-none d-md-block">
         </div>
     </div>
     <div class="carousel-item" style="height: 480px; object-fit:cover;">
-      <img class="d-block w-100" src="images/ourstory3.jpeg" alt="Third slide">
+      <img class="d-block w-100" src="images/ourstory3.jpeg" style="height: 100%;" alt="Third slide">
       <div class="carousel-caption d-none d-md-block">
         </div>
     </div>
@@ -349,6 +349,39 @@
          
     
     </footer>
+
+
+    <script>
+
+      window.onscroll = function() {myFunction()};
+      
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+      
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      <script src="jquery.js"></script> 
+      <script> 
+      $(function(){
+        $("#includedContent").load("history.html"); 
+      });
+</script>  
+
 
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

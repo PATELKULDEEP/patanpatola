@@ -186,7 +186,7 @@
         </div>
   </div>
   
-  <div class="topnav" id="myTopnav" style="width: auto; ">
+  <div class="topnav" id="myTopnav" style="width: 100%; ">
     <a href="index.html" >Home</a>
     <a href="oursotry.html">Our Story</a>
     <a href="patolahouse.html" class="active">Patola House</a>
@@ -316,6 +316,39 @@
           </div>
           <!-- END OF FOOTER -->
     
+
+
+          <script>
+
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+            <script src="jquery.js"></script> 
+            <script> 
+            $(function(){
+              $("#includedContent").load("history.html"); 
+            });
+</script>        
+
          
     
     </footer>
